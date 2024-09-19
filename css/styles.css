@@ -1,0 +1,387 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.header {
+    background-color: #800000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.flash-sale {
+    text-align: center;
+    padding: 10px;
+    background-color: #b30000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 195px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Secciones Promocionales */
+.promotions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.promotion-item {
+    background-color: #dcdcdc;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    box-sizing: border-box;
+    max-width: 24%; /* Ajusta el tamaño máximo para mantenerlas horizontales */
+}
+
+.promotion-item h3 {
+    margin-top: 0;
+}
+
+.promotion-item img {
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Productos Destacados */
+.featured-products {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    text-align: center;
+    width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-item .button {
+    margin-top: 5px;
+}
+
+/* Suscripción */
+.subscription {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .promotion-item {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotions {
+        flex-direction: column;
+    }
+
+    .promotion-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+    }
+
+    .subscription-form input[type="email"] {
+        width: 80%;
+    }
+
+    .subscription-form button {
+        width: 80%;
+    }
+}
+
+/* Estilos básicos y del encabezado se mantienen */
+
+/* Banner de Tecnología */
+.tech-banner {
+    position: relative;
+    margin: 20px 0;
+}
+
+.tech-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.tech-banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Productos de Tecnología */
+.tech-products {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.tech-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    text-align: center;
+    width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-item .button {
+    margin-top: 5px;
+}
+
+/* Suscripción, Pie de página y Responsividad se mantienen sin cambios */
+
+/* Banner de Calzado */
+.shoe-banner {
+    position: relative;
+    margin: 20px 0;
+}
+
+.shoe-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.shoe-banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Productos de Calzado */
+.shoe-products {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.shoe-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    text-align: center;
+    width: 22%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-item .button {
+    margin-top: 5px;
+}
+
+/* El resto de los estilos se reutilizan del archivo styles.css */
